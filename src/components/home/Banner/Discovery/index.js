@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
             background: `center / cover no-repeat url("/assets/hero_banner_xs_sm.png") `,
             backgroundSize: 'contain 100%',
             borderBottomLeftRadius: 50,
-            backgroundColor: 'orange',
+            backgroundColor: '#f7f7f7',
             minHeight: 100,
             height: 'calc(100vh - 10px)',
         },
