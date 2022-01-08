@@ -50,7 +50,7 @@ const FOOTER_ITEMS = [
         ),
             'agenciazyba@gmail.com',
         ]
-    },
+    }
 
 ]
 {/** The Footer component 
@@ -82,8 +82,8 @@ export default function Footer() {
 
                     <Grid container justifyContent='space-between'>
                         {
-                            FOOTER_ITEMS.map((item, key) => (
-                                <Grid key={key} item xs={5} sm={3} md={2} lg={2}>
+                            FOOTER_ITEMS.map((item, index) => (
+                                <Grid key={index} item xs={5} sm={3} md={2} lg={2}>
                                     <FooterInfo title={item.title} subtitles={item.subtitles} />
                                 </Grid>
                             ))

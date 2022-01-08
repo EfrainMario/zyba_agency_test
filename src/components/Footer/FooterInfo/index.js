@@ -22,8 +22,8 @@ export default function FooterInfo({ title, subtitles }) {
             }
 
             {
-                subtitles.map((text, key) => (
-                    <Box key={key} mb={!!title ? undefined : .6}>
+                subtitles.map((text, index) => (
+                    <Box key={index} mb={!!title ? undefined : .6}>
                         <CustomLink href="/" color="inherit" variant={!!title ? 'caption' : 'subtitle2'}
                             style={{ fontWeight: !!title ? undefined : 'bold', }}>
                             {text}
