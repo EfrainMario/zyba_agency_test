@@ -23,7 +23,7 @@ const FOOTER_ITEMS = [
         title: 'Seja Nosso Parceiro',
         subtitles: [
             'Detalhes sobre parcerias',
-            'Contato para parcerias',
+            'Contato para parcerias'
         ]
     },
     {
@@ -34,32 +34,30 @@ const FOOTER_ITEMS = [
         ]
     },
     {
+        title: 0,
         subtitles: [
             'Perguntas frequentes',
             'Termos de compra e cancelamento',
-            'Privacidade e segurança',
+            'Privacidade e segurança'
         ]
     },
     {
-        title: 'Contato',
         subtitles: [(
-            <Row childrenBoxProps={{ mr: .2, }}>
-                <WhatsAppIcon fontSize='small'/>
-                <span>+55 19 99830-5875 </span>
-            </Row>
+            <WhatsappContact key={"asmdlk"} />
         ),
-            'agenciazyba@gmail.com',
+            'agenciazyba@gmail.com'
         ]
     }
-
 ]
+
+
 {/** The Footer component 
     Props: none
     **/}
 export default function Footer() {
     return (
         <Box component='footer' >
-            <Box width={50} height={50} style={{background:'url("/assets/curva.png")'}} ml={0}/>
+            <Box width={50} height={50} style={{ background: 'url("/assets/curva.png")' }} ml={0} />
             <Box py={4} bgcolor='#F7F7F7' borderRadius={'0px 50px 0px 0px'}>
                 <Container maxWidth='md'>
                     <Box py={4} display={'flex'} alignItems={'center'} my={2} color='#000'>
@@ -73,10 +71,10 @@ export default function Footer() {
                             <InstagramIcon />
                         </IconButton>
                         <IconButton color='inherit'>
-                            <FacebookIcon fontSize='small'/>
+                            <FacebookIcon fontSize='small' />
                         </IconButton>
                         <IconButton color='inherit'>
-                            <YoutubeIcon/>
+                            <YoutubeIcon />
                         </IconButton>
                     </Box>
 
@@ -99,5 +97,18 @@ export default function Footer() {
                 }
             </Box>
         </Box>
+    )
+}
+
+
+
+
+function WhatsappContact() {
+
+    return (
+        <Row childrenBoxProps={{ mr: .2, }}>
+            <WhatsAppIcon fontSize='small' />
+            <span>+55 19 99830-5875 </span>
+        </Row>
     )
 }
