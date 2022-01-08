@@ -60,7 +60,7 @@ export default function Menu() {
                         backgroundColor: `rgba(0,0,0,${(percentage > 1 ? Math.floor(percentage) : percentage - 1)})`
                     }}
                 >
-                    <img src='/assets/Frame_logo_white.png' height={48} />
+                    <img src='/assets/Frame_logo_white.png' alt={'Frame_logo_white.png'} height={48} />
                     <Hidden smDown>
                         <Row mx={4} width={'100%'} justifyContent='center' childrenBoxProps={{ mr: 4 }} noMarginOnLast>
                             {
