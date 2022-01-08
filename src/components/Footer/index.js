@@ -34,7 +34,6 @@ const FOOTER_ITEMS = [
         ]
     },
     {
-        title: 0,
         subtitles: [
             'Perguntas frequentes',
             'Termos de compra e cancelamento',
