@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.up('xl')]: {
             backgroundSize: 'cover 100%',
-            height: 'auto',
+            // height: 'auto',
         },
 
     },
